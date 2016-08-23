@@ -1,0 +1,30 @@
+.wrapper {
+  max-width: 60rem;
+}
+
+.buzzfeed-svg {
+  width: 9rem;
+  top: 1px //to align with text (xs-relative is declared on the element)
+}
+
+.avatar {
+  width: 3rem;
+}
+
+.share-more {
+  
+  .share-more__icon {
+    fill: white;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 2px;
+  }
+  
+  .share-more__button {
+    background-color: $fill-blue;
+    border: none;
+    border-radius: $border-radius;
+    height: 2.625rem;
+  }
+  
+}
