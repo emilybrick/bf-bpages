@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 60rem;
+  max-width: 67rem;
 }
 
 .buzzfeed-svg {
@@ -27,4 +27,24 @@
     height: 2.625rem;
   }
   
+}
+
+.sharebar-subbuzz--facebook {
+  border: .5px solid $fill-facebook;
+  color: $fill-facebook;
+  background: none;
+  height: 2rem;
+  font-size: $text-5;
+}
+
+.sharebar-subbuzz--pinterest {
+  border: .5px solid $fill-pinterest;
+  color: $fill-pinterest;
+  background: none;
+  height: 2rem;
+  font-size: $text-5;
+}
+
+.sharebar-subbuzz__svg {
+    width: 1rem;
 }
