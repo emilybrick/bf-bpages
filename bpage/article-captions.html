@@ -1,77 +1,118 @@
 ---
-layout: default
+layout: bpage
 ---
 
-<div class="fill-white clearfix">
-<div class="wrapper md-mx-auto xs-m3">
+<!-- Prototype intending to demonstrate what captions on article templates should look like -->
+
+<!-- Left Rail -->
+<div class="col xs-col-12 md-col-8 clearfix xs-px2 xs-pb5">
+
+  <!-- header -->
+  <h1 class="bold xs-text-2 md-text-1 xs-mb1">Turkey Arrested Kurdish Opposition Leaders And What’s Next May Be Worse</h1>
+  <h3 class="xs-text-4 md-text-3 xs-mb1">“All the opposition that could put pressure on the government is under pressure by the government.”</h3>
+  <p class="text-gray-lightest xs-text-6 xs-mb2">posted on Aug. 23, 2016, at 10:26 a.m.</p>
+  <div class="xs-mb2 md-mb3 xs-text-5 clearfix flex xs-flex-align-center">
+    <a href="#">
+      <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-04/27/12/user_images/webdr14/borzoudaragahi-v2-29743-1461775314-0_large.jpg" class="avatar xs-mr1 circle">
+    </a>
+    <div>
+      <a href="/agh" class="bold">Borzou Daragahi</a>
+      <span class="xs-block text-gray-lightest">BuzzFeed News Reporter</span>
+    </div>
+  </div>
+  
+  <div class="xs-hide md-block">
+    {% include sharebar.html %}
+  </div>
+
+  <!-- article -->
+  <div>
+  
+    <!-- img subbuzz -->
+    <div class="xs-mb3">
+      <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-11/4/10/asset/buzzfeed-prod-web08/sub-buzz-28139-1478270295-1.jpg?resize=625:489&no-auto" class="xs-col-12 xs-mb05 xs-block">
+      <div class="xs-text-6 xs-col-12 md-col-10 xs-mb05">
+        <p class="text-gray-lighter italic xs-mb0">Adem Altan / AFP / Getty Images</p>
+        <p class="xs-mb1">Co-leaders of the pro-Kurdish Peoples’ Democratic Party (HDP) Selahattin Demirtas and Figen Yuksekdag</p>
+      </div>
+      <div class="xs-inline-block md-hide">
+        <div class="sharebar-subbuzz flex">
+        <button class="sharebar-subbuzz--facebook bold rounded flex xs-flex-align-center xs-px1 xs-mr1" href="">
+          <svg class="sharebar-subbuzz__svg xs-mr1 svg-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M427.245 262.99h-55.599v201.745h-83.24v-201.745h-41.62v-69.578h41.62v-41.62c0-56.87 23.51-90.547 90.229-90.547h55.599v69.578h-34.948c-25.734 0-27.641 9.849-27.641 27.958v34.63h62.906l-7.307 69.578zm72.755-159.49c0-50.516-40.984-91.5-91.5-91.5h-305c-50.516 0-91.5 40.984-91.5 91.5v305c0 50.516 40.984 91.5 91.5 91.5h305c50.516 0 91.5-40.984 91.5-91.5v-305z"/>
+           </svg>
+           <span>Share<span>
+        </button>
+        <button class="sharebar-subbuzz--pinterest bold rounded flex xs-flex-align-center xs-px1" href="">
+          <svg class="sharebar-subbuzz__svg xs-mr1 svg-pinterest" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path d="M500 256c0-134.708-109.292-244-244-244s-244 109.292-244 244c0 100.078 60.047 185.859 146.146 223.667-.635-17.156-.318-37.807 4.13-56.234 0 0 4.766-19.698 31.453-132.802-7.943-15.568-7.943-38.76-7.943-38.76 0-36.219 20.969-63.224 47.021-63.224 22.24 0 33.042 16.839 33.042 36.854 0 22.24-14.297 55.599-21.604 86.417-6.036 26.052 13.026 47.021 38.443 47.021 46.385 0 77.521-59.411 77.521-129.625 0-53.693-36.219-93.724-101.667-93.724-74.026 0-120.094 55.281-120.094 116.917 0 21.286 6.354 36.219 16.203 47.974 4.448 5.401 5.083 7.307 3.495 13.661-1.271 4.448-3.813 15.25-5.083 19.38-1.589 6.354-6.672 8.578-12.073 6.354-33.995-13.979-49.88-51.469-49.88-93.406 0-69.26 58.458-152.5 174.104-152.5 93.406 0 154.724 67.672 154.724 139.792 0 95.948-53.375 167.432-131.849 167.432-26.37 0-51.151-14.297-59.411-30.5-14.297 56.234-17.156 67.036-17.156 67.036-5.083 18.745-15.568 37.49-24.781 52.104 22.24 6.672 45.115 10.167 69.26 10.167 134.708 0 244-109.292 244-244z"/>         </svg>
+
+           <span>Pin</span>
+        </button>
+        </div>
+      </div>
+    </div>
     
-  <h1 class="bold xs-col-12 md-col-9">3 Children And A Man Died In A Suspicious Fire In Chicago</h1>
-  <p class="xs-text-4 xs-my1 xs-col-12 md-col-9">A 3-month-old baby was among the victims of a building fire in South Chicago. Police are questioning a person of interest.</p>
-  <p class="text-gray-lightest xs-text-5">posted on Aug. 23, 2016, at 10:26 a.m.</p>
-  
-  <div class="xs-my2 xs-text-5 clearfix">
-    <a href="/agh" title="Andrea Hickey"><img src="https://img.buzzfeed.com/buzzfeed-static/static/user_images/webdr03/2013/7/9/17/tasneemnashrulla-598-1373406682-4_large.jpg" class="xs-mr1 avatar xs-float-left rounded" ></a>
-    <div class="xs-float-left">
-      <a href="/agh" class="bold" title="Andrea Hickey">Tasneem Nashrulla</a>
-      <span class="xs-block text-gray-lighter js-byline__title">BuzzFeed News Reporter</span>
+    <p class="xs-mb2">ISTANBUL — Police officers banged on Figen Yuksekdag’s front door at her apartment in Turkey’s capital, Ankara, just after midnight on Friday. Impatient, they unlocked the door from the outside then entered the home, waving a piece of paper, an arrest warrant for the co-leader of Turkey’s third-largest political party, the left-leaning Kurdish-led People’s Democratic Party, known by its Turkish acronym HDP.</p>
+
+    <p class="xs-mb2">“What are you doing?” Yukesdag could be heard telling the lead police officer in a dramatic video posted online. “You are sneaking into my home like a bandit!”</p>
+
+    <p class="xs-mb2">“Calm down,” a police officer insisted as he struggled to apprehend the 45-year-old journalist and women’s rights activist. “Please calm down.”</p>
+
+    <p class="xs-mb2">“Your prosecutor is a bandit!” she replied. “You are a bandit.”</p>
+
+    <p class="xs-mb2">The arrests capped a stunning two weeks during which Turkey’s authorities arrested the HDP co-mayors of Diyarbakir, the country’s largest Kurdish city, and editors of Cumhuriyet, the country’s largest opposition newspaper. Many independent analysts fear the high-profile arrests will sharpen security worries and damage the country’s economy. Turkey is currently at war in Syria with ISIS, which has launched repeated attacks inside the country. At the same time it is fighting Kurdish rebels in the southeast and in northern Syria, while threatening to intervene militarily in northern Iraq to halt the advances of Shia militias in and around Mosul.</p>
+
+    <!-- img subbuzz -->
+    <div class="xs-mb3 col xs-col-12 md-col-7 md-mb1 md-pr3">
+      <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-11/4/10/asset/buzzfeed-prod-web09/sub-buzz-7192-1478270425-1.jpg?resize=990:660&no-auto" class="xs-col-12 xs-mb05 xs-block">
+      <div class="xs-text-6 xs-col-12 xs-mb05">
+        <p class="text-gray-lighter italic xs-mb0">Chris Mcgrath / Getty Images</p>
+        <p class="xs-mb1">Supporters of the HDP chant slogans during a rally in Istanbul, Oct. 30, 2016.</p>
+      </div>
+      <div class="xs-inline-block md-hide">
+        <div class="sharebar-subbuzz flex">
+        <button class="sharebar-subbuzz--facebook bold rounded flex xs-flex-align-center xs-px1 xs-mr1" href="">
+          <svg class="sharebar-subbuzz__svg xs-mr1 svg-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M427.245 262.99h-55.599v201.745h-83.24v-201.745h-41.62v-69.578h41.62v-41.62c0-56.87 23.51-90.547 90.229-90.547h55.599v69.578h-34.948c-25.734 0-27.641 9.849-27.641 27.958v34.63h62.906l-7.307 69.578zm72.755-159.49c0-50.516-40.984-91.5-91.5-91.5h-305c-50.516 0-91.5 40.984-91.5 91.5v305c0 50.516 40.984 91.5 91.5 91.5h305c50.516 0 91.5-40.984 91.5-91.5v-305z"/>
+           </svg>
+           <span>Share<span>
+        </button>
+        <button class="sharebar-subbuzz--pinterest bold rounded flex xs-flex-align-center xs-px1" href="">
+          <svg class="sharebar-subbuzz__svg xs-mr1 svg-pinterest" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path d="M500 256c0-134.708-109.292-244-244-244s-244 109.292-244 244c0 100.078 60.047 185.859 146.146 223.667-.635-17.156-.318-37.807 4.13-56.234 0 0 4.766-19.698 31.453-132.802-7.943-15.568-7.943-38.76-7.943-38.76 0-36.219 20.969-63.224 47.021-63.224 22.24 0 33.042 16.839 33.042 36.854 0 22.24-14.297 55.599-21.604 86.417-6.036 26.052 13.026 47.021 38.443 47.021 46.385 0 77.521-59.411 77.521-129.625 0-53.693-36.219-93.724-101.667-93.724-74.026 0-120.094 55.281-120.094 116.917 0 21.286 6.354 36.219 16.203 47.974 4.448 5.401 5.083 7.307 3.495 13.661-1.271 4.448-3.813 15.25-5.083 19.38-1.589 6.354-6.672 8.578-12.073 6.354-33.995-13.979-49.88-51.469-49.88-93.406 0-69.26 58.458-152.5 174.104-152.5 93.406 0 154.724 67.672 154.724 139.792 0 95.948-53.375 167.432-131.849 167.432-26.37 0-51.151-14.297-59.411-30.5-14.297 56.234-17.156 67.036-17.156 67.036-5.083 18.745-15.568 37.49-24.781 52.104 22.24 6.672 45.115 10.167 69.26 10.167 134.708 0 244-109.292 244-244z"/>         </svg>
+
+           <span>Pin</span>
+        </button>
+        </div>
+      </div>
     </div>
+
+    <p class="xs-mb2">On Friday, the nation’s main stock index, down 8% this year, fell nearly 3%, while Turkey’s lira fell to fresh lows against the dollar and the euro. Federica Mogherini, foreign relations chief of the European Union, said she was “extremely worried” about the arrests; she met with Demirtas in June.</p>
+
+
+    <p class="xs-mb2">The detentions follow a wave of mass arrests and firings of suspected supporters of Turkey’s failed July 15 coup attempt and other government opponents. The HDP, along with all of Turkey’s main political parties, strongly and quickly condemned the attempted coup, allegedly perpetrated by supporters of Fethullah Gulen, who leads an Islamic movement. Demirtas, in an interview a day after the coup failed, told BuzzFeed News he hoped the putsch effort would make Erdogan “a little easier with his opponents.”</p>
+
+
   </div>
 
-  <div class="xs-mb4 xs-col-12 md-col-9 clearfix">
-    <div class="col xs-col-5 md-col-3 xs-pr05">
-      <button class="xs-col-12 button button--facebook button--icon" href="">
-        <svg viewbox="0 0 512 512" id="facebook">
-          <path d="M483.743,0H28.259C12.649,0,0,12.649,0,28.259v455.484C0,499.348,12.649,512,28.259,512 h245.218V313.728h-66.724v-77.271h66.724v-56.985c0-66.13,40.39-102.14,99.384-102.14c28.257,0,52.545,2.104,59.621,3.044v69.111 l-40.913,0.019c-32.086,0-38.298,15.246-38.298,37.618v49.334h76.519l-9.964,77.271h-66.555V512h130.473 C499.348,512,512,499.348,512,483.743V28.259C512,12.649,499.348,0,483.743,0z">
-        </svg>Share
-      </button>
-    </div>
-    <div class="col md-col-3 xs-hide md-inline-block xs-pr05">
-      <button class="xs-col-12 button button--twitter button--icon" href="">
-        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path d="M486.746 108.788c-17.472 7.531-36.449 12.953-56.03 15.062 20.183-12.049 35.546-31.027 42.775-53.62-18.677 11.146-39.763 19.279-61.753 23.496-17.773-18.978-43.077-30.726-71.091-30.726-53.921 0-97.299 43.679-97.299 97.299 0 7.531.904 15.062 2.41 22.291-80.731-4.217-152.726-42.775-200.622-101.817-8.435 14.459-13.254 31.027-13.254 49.101 0 33.738 17.17 63.561 43.378 81.032-15.965-.602-31.027-5.121-43.98-12.351v1.205c0 47.294 33.437 86.454 78.02 95.491-8.133 2.109-16.869 3.314-25.605 3.314-6.326 0-12.351-.602-18.375-1.506 12.351 38.558 48.198 66.573 90.973 67.477-33.437 26.207-75.309 41.57-120.795 41.57-8.133 0-15.664-.301-23.496-1.205 43.077 27.714 94.287 43.679 149.413 43.679 178.934 0 276.835-148.208 276.835-276.835 0-4.217 0-8.435-.301-12.652 18.978-13.857 35.546-31.027 48.8-50.306z"/>
-         </svg>Tweet
-      </button>
-    </div>
-    <div class="col xs-col-5 md-col-3 xs-pr05">
-      <button class="xs-col-12 button button--pinterest button--icon" href="">
-        <svg id="pinterest" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path d="M500 256c0-134.708-109.292-244-244-244s-244 109.292-244 244c0 100.078 60.047 185.859 146.146 223.667-.635-17.156-.318-37.807 4.13-56.234 0 0 4.766-19.698 31.453-132.802-7.943-15.568-7.943-38.76-7.943-38.76 0-36.219 20.969-63.224 47.021-63.224 22.24 0 33.042 16.839 33.042 36.854 0 22.24-14.297 55.599-21.604 86.417-6.036 26.052 13.026 47.021 38.443 47.021 46.385 0 77.521-59.411 77.521-129.625 0-53.693-36.219-93.724-101.667-93.724-74.026 0-120.094 55.281-120.094 116.917 0 21.286 6.354 36.219 16.203 47.974 4.448 5.401 5.083 7.307 3.495 13.661-1.271 4.448-3.813 15.25-5.083 19.38-1.589 6.354-6.672 8.578-12.073 6.354-33.995-13.979-49.88-51.469-49.88-93.406 0-69.26 58.458-152.5 174.104-152.5 93.406 0 154.724 67.672 154.724 139.792 0 95.948-53.375 167.432-131.849 167.432-26.37 0-51.151-14.297-59.411-30.5-14.297 56.234-17.156 67.036-17.156 67.036-5.083 18.745-15.568 37.49-24.781 52.104 22.24 6.672 45.115 10.167 69.26 10.167 134.708 0 244-109.292 244-244z"/>
-        </svg>Pin
-      </button>
-    </div>  
-    <div class="col xs-col-2 md-col-3 share-more">
-    <button class="xs-col-12 share-more__button">
-      <svg viewBox="0 0 512 512" class="share-more__icon xs-relative" id="share-more-icon">
-        <path d="M408.075 133H347.17c-9.746 0-18.882 6.7-19.49 16.445-1.22 11.572 7.307 20.1 18.27 20.1h52.38c5.48 0 9.745 3.653 9.745 9.135v275.905c0 5.48-4.264 7.31-9.745 7.31H113.29c-5.483 0-9.746-1.83-9.746-7.31V178.68c0-5.482 4.263-9.136 9.745-9.136h51.16c9.745 0 18.88-6.7 19.49-16.445 1.218-11.573-7.918-20.1-18.88-20.1h-61.516C82.227 133 67 148.227 67 168.935V463.72c0 21.318 15.227 40.2 36.544 40.2h304.53c21.318 0 36.545-19.49 36.545-40.2V168.936c0-20.708-15.228-35.935-36.545-35.935"></path><path d="M175.938 107.886c-7.917-7.31-7.917-20.708 0-28.017l66.388-66.388c7.31-7.31 19.49-7.31 26.8 0l66.387 66.387c7.917 7.917 7.917 20.707 0 28.016-3.655 3.046-7.918 4.873-12.79 4.873-4.873 0-10.355-1.828-14.01-5.483l-34.716-35.325v239.36c0 10.355-7.917 18.882-18.27 18.882-10.356 0-18.273-8.527-18.273-18.88V71.95l-35.326 34.716c-3.654 3.654-8.527 5.482-13.4 5.482-4.872.61-9.744-1.218-12.79-4.264"></path>
-      </svg>
-    </button>
-    </div>
-  </div>
-  
-  <div class="xs-col-12 md-col-9 text-gray-lighter">
-    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-08/23/10/enhanced/buzzfeed-prod-fastlane01/grid-cell-11215-1471962245-4.jpg" class="xs-col-12 xs-block">
-    <a href="#" class="link-gray-lighter xs-text-6 xs-mb3">abcnews.com</a>
 
-    <p class="xs-mt3 xs-mb2">Three children — including a 3-month-old baby — and a man died in a multi-unit building fire in Chicago early Tuesday, police said. The arson unit is investigating the fire and detectives were questioning a person of interest, Chicago police confirmed to BuzzFeed News.</p>
-
-    <p class="xs-mb2">The fire began at approximately 1:37 am local time in a South Chicago neighborhood. The 3-month-old baby was found next to a man who jumped from the three-story building, the Chicago Tribune reported.The infant was pronounced dead at a hospital, police said. Two other children, whose ages were unknown, were also found dead along with an unidentified man.</p>
-
-    <p class="xs-mb2">A man suspected of starting the fire reportedly had an argument with someone in the building, a police source told the Tribune. He escaped the fire.</p>
-
-    <p class="xs-mb2">A 48-year-old man was also taken to the hospital with non-life threatening injuries, police said.</p>
-
-    <p class="xs-mb2">A witness, Clay Turner, told the Tribune that he saw the 3-month-old next to a man lying on the ground and screaming for help. Turner said he tried to help them.
-    “I’m just speechless,” he said.</p>
-
-    <p class="xs-mb2">This is developing story. Check back here for updates and follow <a href="#">BuzzFeed News on Twitter.</a>
-    </p>
-  </div>
-
-  <div class="xs-mt5 xs-col-12 md-col-9 xs-p2 fill-gray text-white rounded">
-    <p>Tasneem Nashrulla is a reporter for BuzzFeed News and is based in New York.</p>
-    <p>Contact Tasneem Nashrulla at <a href="#">tasneem.nashrulla@buzzfeed.com.</a></p>
-  </div>
-
+    
 </div>
+
+<!-- Right Rail -->
+<div class="col xs-hide md-inline-block md-col-4 md-pl4 xs-text-center text-gray-lighter">
+
+  <div class="xs-p4 xs-mb2 fill-yellow-lighter xs-border-lighter rounded">
+    Ad Module
+  </div>
+
+  <div class="xs-p4 xs-py6  xs-mb2 fill-yellow-lighter xs-border-lighter rounded">
+    News Module
+  </div>
+
+  <div class="xs-p4 xs-mb2 fill-yellow-lighter xs-border-lighter rounded">
+    Social Module
+  </div>
 </div>
 
