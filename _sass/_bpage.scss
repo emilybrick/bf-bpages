@@ -3,8 +3,13 @@
 }
 
 .buzzfeed-svg {
-  width: 9rem;
-  top: 1px //to align with text (xs-relative is declared on the element)
+  width: 7rem;
+  top: 1px; //to align with text (xs-relative is declared on the element)
+  fill: $fill-red;
+  &--news {
+    width: 9rem;
+    top: 2px;
+  }
 }
 
 .avatar {
@@ -21,6 +26,18 @@
   }
   
   .share-more__button {
+    background-color: $fill-blue;
+    border: none;
+    border-radius: $border-radius;
+    height: 2.625rem;
+  }
+  
+}
+
+
+.more {
+  
+  .more__button {
     background-color: $fill-blue;
     border: none;
     border-radius: $border-radius;
