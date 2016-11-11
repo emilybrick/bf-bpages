@@ -66,6 +66,21 @@
   font-size: $text-5;
 }
 
+.share-subbuzz__icon-pinterest {
+  width: 1rem;
+  height: 1rem;
+  fill: $fill-pinterest;
+  margin-right: .5rem;
+}
+
+.share-subbuzz__icon-facebook{
+  width: 1rem;
+  height: 1rem;
+  fill: $fill-facebook;
+  margin-right: .5rem;
+}
+
+
 
 .button--icon > svg {
   width: 1.25rem !important;
