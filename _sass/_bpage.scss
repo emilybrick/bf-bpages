@@ -2,6 +2,18 @@
   max-width: 67rem;
 }
 
+// Buzz Title
+.buzz-title {
+
+  @include solid-breakpoint("xs") {
+    font-size: $text-1;
+  }
+
+  @include solid-breakpoint("md") {
+    font-size: 2.25rem;
+  }
+}
+
 .buzzfeed-svg {
   width: 7rem;
   top: 1px; //to align with text (xs-relative is declared on the element)
@@ -91,6 +103,15 @@
   background-color: $fill-gray !important;
 }
 
+.email-newsletter {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 6.25rem;
+  background: url("http://i66.tinypic.com/rm20y1.png");
+  background-size: 30rem;
+}
+
 .ad-unit {
   border-top: 8px solid $fill-promoted-orange !important;
 }
@@ -102,4 +123,12 @@
 
 .news-header--black {
   border-top: 8px solid $text-gray !important;
+}
+
+.facebook-header--blue {
+  border-top: 8px solid $fill-blue !important;
+}
+
+.buzzfeed-news-logo__svg {
+  width: 8rem;
 }
