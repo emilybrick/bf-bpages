@@ -14,6 +14,17 @@
   }
 }
 
+.buzz-title-large {
+
+  @include solid-breakpoint("xs") {
+    font-size: $text-1;
+  }
+
+  @include solid-breakpoint("md") {
+    font-size: 2.625rem;
+  }
+}
+
 .buzzfeed-svg {
   width: 7rem;
   top: 1px; //to align with text (xs-relative is declared on the element)
