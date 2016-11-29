@@ -2,14 +2,12 @@
 layout: bpage
 ---
 
-<!-- Prototype intending to demonstrate what captions on article templates should look like -->
-
-<!-- Left Rail -->
-<div class="col xs-col-12 md-col-8 clearfix xs-pb5">
+<!-- Left (Main) Rail -->
+<div class="col xs-col-12 md-col-8 clearfix xs-mb4">
   
   <a href="#" class="xs-p05 md-p1 xs-inline-block xs-mb1 fill-gray rounded link-white xs-text-6 caps">Food</a>
 
-  <!-- header -->
+  <!-- header group -->
   <div class="header xs-mb3">
     <h1 class="bold xs-mb1 buzz-title">Soon Your Lazy Ass Can Order McDonald’s Right From Your Phone</h1>
     <h3 class="xs-text-4 md-text-3 xs-mb1">*Orders 1,000 McFlurries*</h3>
@@ -25,13 +23,10 @@ layout: bpage
         <span class="xs-block text-gray-lightest">BuzzFeed News Reporter</span>
       </div>
     </div>
-
   </div>
   
   <!-- top share bar -->
-  <div class="xs-hide md-block">
-    {% include sharebar.html %}
-  </div>
+  <div class="xs-hide md-block">{% include sharebar.html %}</div>
 
   <!-- article -->
   <div class="article xs-mb4">
@@ -59,24 +54,23 @@ layout: bpage
       <p class="xs-text-6 text-gray-lightest italic xs-mb3">joseph._.rivero / Via instagram.com</p>
       <p>The update is likely aimed at the <a href="#">70% of McDonald’s customers who order via drive-thru.</a></p>
     </div>
-  
-
-
   </div>
 
   <!-- bottom share bar -->
-  <div class="xs-hide md-block">
-    {% include sharebar.html %}
-  </div>
+  <div class="xs-hide md-block">{% include sharebar.html %}</div>
 
-  <div class="xs-mb3 xs-p3 fill-yellow-lighter flex xs-flex-align-center xs-flex-justify-center text-gray-lighter"> This area is for comments! 
-  </div>
+  <div class="xs-p3 fill-yellow-lighter flex xs-flex-align-center xs-flex-justify-center text-gray-lighter"> This area is for comments!</div>
 
 </div>
 
 <!-- Right Rail -->
 <div class="col xs-hide md-inline-block md-col-4 md-pl4"> 
   {% include right-rail.html %}
+</div>
+
+<!-- Feed Underneath the Mobile Article -->
+<div class="xs-block md-hide"> 
+  {% include full-width-feed.html %}
 </div>
 
 <!-- Bottom Sticky Sharebar -->
