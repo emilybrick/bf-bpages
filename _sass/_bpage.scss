@@ -25,7 +25,12 @@
 }
 
 .avatar {
-  width: 3rem;
+  @include solid-breakpoint("xs") {
+    width: 2.3125rem;
+  }
+  @include solid-breakpoint("md") {
+    width: 3rem;
+  }
 }
 
 .sharebar-button {
