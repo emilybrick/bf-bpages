@@ -1,14 +1,15 @@
 ---
 layout: bpage
 ---
+<iframe id="filestack-container"></iframe>
 
 <script src="https://api.filestackapi.com/filestack.js"></script>
 <script type="text/javascript">
   filepicker.setKey("AH5uDwctCQOC3qZjSuZNKz");
   filepicker.pick(
     {
-      mimetype: 'image/*',
-      container: 'window',
+      mimetype: 'video/*',
+      container: 'filestack-container',
       services: ['COMPUTER']
     },
     function(Blob){
