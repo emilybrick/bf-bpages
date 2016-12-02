@@ -1,0 +1,20 @@
+---
+layout: bpage
+---
+
+<script src="https://api.filestackapi.com/filestack.js"></script>
+<script type="text/javascript">
+  filepicker.setKey("AH5uDwctCQOC3qZjSuZNKz");
+  filepicker.pick(
+    {
+      mimetype: 'image/*',
+      container: 'window',
+      services: ['COMPUTER']
+    },
+    function(Blob){
+      console.log(JSON.stringify(Blob));
+    },
+    function(FPError){
+      console.log(FPError.toString());
+    });
+</script>
