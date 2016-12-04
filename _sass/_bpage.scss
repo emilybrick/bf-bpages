@@ -158,3 +158,19 @@
   width: 660px;
   height: 660px;
 }
+
+.img-icon {
+  width: 1rem;
+  height: 1rem;
+  bottom: 1px;
+  position: relative;
+}
+
+.add-yours-bg {
+
+  @include solid-breakpoint("sm") {
+    background-color: $fill-gray-lighter;
+    border: $border-lighter;
+  }
+}
+
