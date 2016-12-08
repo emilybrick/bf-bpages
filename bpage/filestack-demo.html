@@ -61,15 +61,30 @@ layout: bpage
     </div>
   </div>
 
-  <div>{% include filestack-widget_step1.html %}</div>
+  <div class="filestack-wrapper">
+    <div class="fs-step">{% include filestack-widget_step1.html %}</div>
+    <div class="fs-step xs-hide">{% include filestack-widget_step2.html %}</div>
+    <div class="fs-step xs-hide" >{% include filestack-widget_step3.html %}</div>
+    <div class="fs-step xs-hide" >{% include filestack-widget_step4.html %}</div>
+    <div class="fs-step xs-hide" >{% include filestack-widget_step4_error.html %}</div>
+  </div>
 
-  <div>{% include filestack-widget_step2.html %}</div>
+  <script>
+    $(".filestack-wrapper").on("click", "button", function(e){
+      var currentStep = $(e.currentTarget).closest('.fs-step');
+      currentStep.addClass('xs-hide');
+      var nextStep = currentStep.next('.fs-step')
+      
+      if (nextStep[0]) {
+        nextStep.removeClass('xs-hide');
+      } else {
+        $('.filestack-wrapper .fs-step')[0].removeClass('xs-hide');
+      }
 
-  <div>{% include filestack-widget_step3.html %}</div>
 
-  <div>{% include filestack-widget_step4.html %}</div>
+    })
 
-  <div>{% include filestack-widget_step4_error.html %}</div>
+  </script>
 
   <!-- bottom share bar -->
   <div class="xs-col-12 xs-hide md-inline-block">{% include sharebar.html %}</div>
