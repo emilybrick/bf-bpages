@@ -59,25 +59,26 @@ layout: bpage
   <!-- bottom share bar -->
   <div class="xs-hide md-block">{% include sharebar.html %}</div>
 
-  <div class="add-yours-bg xs-mb4 xs-p0 sm-p4 rounded col xs-col-12">
-      <h2 class="bold xs-mb1">Add Yours!</h2>
-      <form class="xs-mb1 xs-relative">
-        <div class="clearfix xs-mb1">
-          <p class="xs-float-left">Add text, image, or both</p>
-          <a href="#" class="link-blue clearfix xs-float-right">
-            <svg class="img-icon svg-5 svg-blue xs-mr1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
-              <title>Photo</title>
-              <path d="M0 3v32h38V3H0zm29 13c-1.3-1.3-2.7-1.3-4 0l-8 8-2-2c-1.3-1.3-2.7-1.3-4 0l-7 7V7h30v14.1L29 16zm-15-2c0 1.7-1.3 3-3 3s-3-1.3-3-3 1.3-3 3-3 3 1.3 3 3z"/>
-            </svg>
-            <span class="xs-float-right">Attach Image</span>
-          </a>
-        </div>
+
+  <div class="xs-border-lighter xs-mb4 xs-p2 xs-pt3 sm-px4 sm-py3 rounded col xs-col-12">
+      <h2 class="xs-text-2 sm-text-1 bold">Add Yours!</h2>
+      <p class="xs-float-left xs-mb1 sm-mb2">Add text, image, or both</p>
+      <form class="xs-mb1 xs-relative clearfix">
         <textarea class="xs-col-12 textarea js-add-yours__text xs-mb1" placeholder="Enter text..."></textarea>
 
-        <a href="#" class="xs-col-12 button button--primary" data-type="submit">Submit</a>
+        <a href="#" class="link-blue xs-mt1 xs-mb2 sm-m0 clearfix xs-float-left">
+          <svg class="img-icon svg-5 svg-blue xs-mr1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
+            <title>Photo</title>
+            <path d="M0 3v32h38V3H0zm29 13c-1.3-1.3-2.7-1.3-4 0l-8 8-2-2c-1.3-1.3-2.7-1.3-4 0l-7 7V7h30v14.1L29 16zm-15-2c0 1.7-1.3 3-3 3s-3-1.3-3-3 1.3-3 3-3 3 1.3 3 3z"/>
+          </svg>
+          <span class="xs-float-right bold">Attach Image</span>
+        </a>
+
+        <a href="#" class="xs-float-none sm-float-right col xs-col-12 sm-col-3 button button--primary" data-type="submit">Submit</a>
 
       </form>
   </div>
+
 
   <div class="xs-p3 fill-yellow-lighter flex xs-flex-align-center xs-flex-justify-center text-gray-lighter"> This area is for comments!</div>
 

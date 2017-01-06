@@ -171,14 +171,6 @@
   position: relative;
 }
 
-.add-yours-bg {
-
-  @include solid-breakpoint("sm") {
-    background-color: $fill-gray-lighter;
-    border: $border-lighter;
-  }
-}
-
 
 .filestack-border {
   border: 2px dotted #c7c7c7;
@@ -195,9 +187,17 @@
   top: -.5rem;
 }
 
+//// Add Yours
+.add-yours-bg {
 
+  @include solid-breakpoint("sm") {
+    background-color: $fill-gray-lighter;
+    border: $border-lighter;
+  }
+}
 
 //// Filter Bubble
+
 .numberCircle {
     display: inline-block;
     line-height: 0;
