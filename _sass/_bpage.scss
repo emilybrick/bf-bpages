@@ -223,6 +223,45 @@
   font-size: 2rem;
 }
 
+.bubble-carousel {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  overflow-x: scroll
+}
+
+.bubble-carousel ul { 
+  display:-moz-flex;
+  display:-ms-flex;
+  display:-webkit-flex;
+  display:-o-flex;
+  display:flex;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+.bubble-quote {
+  margin-right:10px;
+  width:300px;
+  -webkit-flex-shrink: column 0;
+   flex-shrink: 0;
+}
+
+
+.chat-bubbles-container {
+  right: -46px;
+  top: -13px;
+}
+
+.chat-bubbles {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
 //// Flex Class Prefixes
 
 .flex {
