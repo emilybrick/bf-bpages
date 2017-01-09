@@ -1,0 +1,72 @@
+//// Filter Bubble
+
+.number-circle {
+  display: inline-block;
+  line-height: 0;
+  border-radius: 50%;
+  font-size: .875rem
+}
+
+.number-circle span {
+  display: inline-block;
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+
+.bubble-header {
+  font-size: 2rem;
+}
+
+.bubble-carousel {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  overflow-x: scroll
+}
+
+.bubble-carousel ul { 
+  display:-moz-flex;
+  display:-ms-flex;
+  display:-webkit-flex;
+  display:-o-flex;
+  display:flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+.bubble-quote {
+  margin-right:10px;
+  -webkit-flex-shrink: column 0;
+  flex-shrink: 0; 
+
+  @include solid-breakpoint (xs) {
+    width: 80%;
+  }
+
+  @include solid-breakpoint (sm) {
+    width: 100%;
+  }
+}
+
+.chat-bubbles-container {
+  right: -35px;
+  top: -15px;
+}
+
+.chat-bubbles {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@include generate-breakpoint-prefixes {
+    &bubble-card{
+      box-shadow: 0 1px 1px rgba(173,168,168,0.1);
+      border: 1px solid rgba(0,0,0,0.1);
+      background-color: #fff;
+      border-radius: 3px;
+    };
+  }
+

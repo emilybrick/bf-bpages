@@ -28,6 +28,7 @@ layout: bpage-bubble
         <span class="xs-block text-gray-lightest">BuzzFeed News Reporter</span>
       </div>
     </div>
+
   </div>
   
   <!-- top share bar -->
@@ -62,11 +63,16 @@ layout: bpage-bubble
   </div>
 </div>
 
+<!-- Right Rail -->
+<div class="col xs-hide md-inline-block md-col-4 md-pl4"> 
+  {% include right-rail.html %}
+</div>
+
+
 <!--filter bubble -->
 <div class="col filter-bubble-wrapper xs-col-12 md-col-8 clearfix xs-mb5">
   <div class="fs-home">{% include filter-bubble_summary.html %}</div>
-  <div class="fs-step xs-hide">{% include filter-bubble-mobile_quote.html %}</div>
-  <div class="fs-step xs-hide">{% include filter-bubble_quote2.html %}</div>
+  <div class="fs-step xs-hide">{% include filter-bubble-v2_quote.html %}</div>
 </div>
 
 <script>
@@ -113,17 +119,11 @@ layout: bpage-bubble
 </script>
 
 <!-- bottom share bar -->
-<div class="xs-col-12 xs-hide md-inline-block">{% include sharebar.html %}</div>
+<div class="col xs-col-12 md-col-8 xs-hide md-inline-block">{% include sharebar.html %}</div>
 
 
 <!--comments -->
-<div class="xs-p3 fill-yellow-lighter flex xs-flex-align-center xs-flex-justify-center text-gray-lighter"> This area is for comments!</div>
-
-
-<!-- Right Rail -->
-<div class="col xs-hide md-inline-block md-col-4 md-pl4"> 
-  {% include right-rail.html %}
-</div>
+<div class="xs-p3 xs-mb2 col xs-col-12 md-col-8 fill-yellow-lighter flex xs-flex-align-center xs-flex-justify-center text-gray-lighter"> This area is for comments!</div>
 
 <!-- Feed Underneath the Mobile Article -->
 <div class="xs-block xs-px2 sm-px0 md-hide"> 
