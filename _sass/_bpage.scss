@@ -206,15 +206,54 @@
 }
 
 
-.xs-flex-align-center {
-  -webkit-align-items: center;
-  align-items: center;
+@include generate-breakpoint-prefixes {
+  &flex-align-center {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+@include generate-breakpoint-prefixes {
+  &flex-align-start {
+    -webkit-align-items: start;
+    align-items: start;
+  }
+}
+
+@include generate-breakpoint-prefixes {
+  &flex-align-end {
+    -webkit-align-items: end;
+    align-items: end;
+  }
+}
+
+@include generate-breakpoint-prefixes {
+  &flex-justify-center {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+@include generate-breakpoint-prefixes {
+  &flex-justify-start {
+    -webkit-justify-content: start;
+    justify-content: start;
+  }
 }
 
 
-.xs-flex-justify-center {
-  -webkit-justify-content: center;
-  justify-content: center;
+@include generate-breakpoint-prefixes {
+  &flex-justify-end {
+    -webkit-justify-content: end;
+    justify-content: end;
+  }
+}
+
+@include generate-breakpoint-prefixes {
+  &flex-justify-space-between {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
 }
 
 
@@ -227,12 +266,5 @@
   -webkit-flex-direction: column !important; /* works with row or column */
    flex-direction: column;
 }
-
-.xs-flex-justify-between {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-}
-
-
 
 
