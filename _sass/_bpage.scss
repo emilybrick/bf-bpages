@@ -268,16 +268,22 @@
 
 .article-17, .list-17 {
   & p {
-    font-size: 17px;
+    
+    @include solid-breakpoint("md") {
+      font-size: 17px;
+    }
   }
 }
 
 
 .article-18, .list-18 {
-  & p {
-    font-size: 18px;
+    & p {
+      
+      @include solid-breakpoint("md") {
+        font-size: 18px;
+      }
+    }
   }
-}
 
 
 
