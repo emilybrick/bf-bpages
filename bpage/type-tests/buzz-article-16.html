@@ -108,36 +108,27 @@ layout: bpage-news
     </div>
   </div>
 
-  <!-- bottom share bar -->
-  <div class="xs-hide md-block">
-    {% include sharebar.html %}
-  </div>
+   <!-- bottom share bar -->
+   <div class="xs-hide md-block">{% include sharebar.html %}</div>
 
-</div>
+   <div class="xs-p3 fill-yellow-lighter flex xs-flex-align-center xs-flex-justify-center text-gray-lighter"> This area is for comments!</div>
 
-<!-- Right Rail -->
-<div class="col xs-hide md-inline-block md-col-4 md-pl4 xs-text-center text-gray-lighter">
+ </div>
 
-  <div class="xs-p4 xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    Ad Module
-  </div>
+ <!-- Right Rail -->
+ <div class="col xs-hide md-inline-block md-col-4 md-pl4"> 
+   {% include right-rail.html %}
+ </div>
 
-  <div class="xs-p4 xs-py6  xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    News Module
-  </div>
+ <!-- Feed Underneath the Mobile Article -->
+ <div class="xs-block md-hide"> 
+   {% include full-width-feed.html %}
+ </div>
 
-  <div class="xs-p4 xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    Social Module
-  </div>
-
-  <div class="xs-p4 xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    Newsletter Module
-  </div>
-
-  <div class="xs-p4 xs-py6 xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    Top Posts
-  </div>
-</div>
+ <!-- Bottom Sticky Sharebar -->
+ <div class="xs-block md-hide">
+   {% include sharebar--sticky.html %}
+ </div>
 
 <!-- Bottom Sticky Sharebar -->
 <div class="xs-block md-hide">
