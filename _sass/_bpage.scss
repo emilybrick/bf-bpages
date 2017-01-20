@@ -268,3 +268,22 @@
 }
 
 
+
+
+////font size tests
+
+.article-17, .list-17 {
+  & p {
+    font-size: 17px;
+  }
+}
+
+
+.article-18, .list-18 {
+  & p {
+    font-size: 18px;
+  }
+}
+
+
+
