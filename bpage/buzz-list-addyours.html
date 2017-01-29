@@ -2,8 +2,10 @@
 layout: bpage
 ---
 
+<!-- 17px body font size -->
+
 <!-- Left (Main) Rail -->
-<div class="col xs-col-12 md-col-8 clearfix xs-mb4">
+<div class="col xs-col-12 md-col-8 clearfix xs-mb4 list-17">
   
   <a href="#" class="xs-p05 xs-px1 xs-inline-block xs-mb1 fill-gray rounded link-white xs-text-6 caps">Food</a>
 
@@ -33,7 +35,7 @@ layout: bpage
 
     <!-- img subbuzz -->
     <div class="xs-mb4">
-      <h2 class="bold xs-text-3 md-text-1 xs-mb1">Starting in 2017, customers will be able to order Big Macs, Egg McMuffins, and other McDonald’s favorites on their phones.</h2>
+      <h2 class="bold xs-text-2 xs-mb1">Starting in 2017, customers will be able to order Big Macs, Egg McMuffins, and other McDonald’s favorites on their phones.</h2>
       <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-11/25/12/asset/buzzfeed-prod-web08/sub-buzz-29276-1480096066-1.jpg?resize=625:387&no-auto" class="xs-col-12 xs-mb05 xs-block">
       <p class="xs-text-6 text-gray-lightest italic xs-mb3">joseph._.rivero / Via instagram.com</p>
       <p>Starbucks, Dunkin’ Donuts, and Chipotle have already adopted the technology, so McDonald’s is really just trying to catch up.</p>
@@ -41,7 +43,7 @@ layout: bpage
 
     <!-- img subbuzz -->
     <div class="xs-mb4">
-      <h2 class="bold xs-text-3 md-text-1 xs-mb1">The service will roll out in the US, reports <a href="#">Business Insider</a>, as well as select international locations including Australia, Canada, France, and the UK.</h2>
+      <h2 class="bold xs-text-2 xs-mb1">The service will roll out in the US, reports <a href="#">Business Insider</a>, as well as select international locations including Australia, Canada, France, and the UK.</h2>
       <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-11/25/13/asset/buzzfeed-prod-web12/sub-buzz-17957-1480097465-2.png?resize=625:425" class="xs-col-12 xs-mb05 xs-block">
       <p class="xs-text-6 text-gray-lightest italic xs-mb3">joseph._.rivero / Via instagram.com</p>
       <p>While the fast food chain hasn’t announced out exactly how it’ll work, it did launch an app in October 2015 that allows people to browse menus and find nearby locations — the update might simply add the ability to order ahead of time and skip lines to pick up your food.</p>
@@ -49,7 +51,7 @@ layout: bpage
 
     <!-- img subbuzz -->
     <div class="xs-mb4">
-      <h2 class="bold xs-text-3 md-text-1 xs-mb1">This means less time spent waiting, and more time spent inhaling Chicken McNuggets.</h2>
+      <h2 class="bold xs-text-2 xs-mb1">This means less time spent waiting, and more time spent inhaling Chicken McNuggets.</h2>
       <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-11/28/15/asset/buzzfeed-prod-fastlane02/sub-buzz-14046-1480363570-4.jpg?resize=625:469&no-auto" class="xs-col-12 xs-mb05 xs-block">
       <p class="xs-text-6 text-gray-lightest italic xs-mb3">joseph._.rivero / Via instagram.com</p>
       <p>The update is likely aimed at the <a href="#">70% of McDonald’s customers who order via drive-thru.</a></p>
@@ -60,13 +62,23 @@ layout: bpage
   <div class="xs-hide md-block">{% include sharebar.html %}</div>
 
 
-  <div class="sm-border-lighter clearfix xs-my4 sm-px4 sm-py3 rounded col xs-col-12">
-      <h2 class="xs-text-1 bold">Add Yours!</h2>
-      <p class="xs-float-left xs-mb2">Add text, image, or both</p>
+
+  <div class="clearfix xs-my4 col xs-col-12">
+      <h2 class="bold">Add Yours</h2>
+      <p class="xs-float-left xs-mb2 xs-text-4">Add text, image, or both</p>
+
+      <a href="#" class="xs-float-right xs-inline-block md-hide link-blue clearfix xs-mb2">
+        <svg class="img-icon svg-5 svg-blue xs-mr1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
+          <title>Photo</title>
+          <path d="M0 3v32h38V3H0zm29 13c-1.3-1.3-2.7-1.3-4 0l-8 8-2-2c-1.3-1.3-2.7-1.3-4 0l-7 7V7h30v14.1L29 16zm-15-2c0 1.7-1.3 3-3 3s-3-1.3-3-3 1.3-3 3-3 3 1.3 3 3z"/>
+        </svg>
+        <span class="xs-float-right bold">Attach Image</span>
+      </a>
+
       <form class="xs-mb1 xs-relative clearfix">
         <textarea class="xs-col-12 textarea js-add-yours__text xs-mb1" placeholder="Enter text..."></textarea>
 
-        <a href="#" class="link-blue xs-mb2 sm-m0 clearfix xs-float-left">
+        <a href="#" class="xs-hide md-inline-block link-blue clearfix md-float-left">
           <svg class="img-icon svg-5 svg-blue xs-mr1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
             <title>Photo</title>
             <path d="M0 3v32h38V3H0zm29 13c-1.3-1.3-2.7-1.3-4 0l-8 8-2-2c-1.3-1.3-2.7-1.3-4 0l-7 7V7h30v14.1L29 16zm-15-2c0 1.7-1.3 3-3 3s-3-1.3-3-3 1.3-3 3-3 3 1.3 3 3z"/>
@@ -84,6 +96,7 @@ layout: bpage
 
 </div>
 
+
 <!-- Right Rail -->
 <div class="col xs-hide md-inline-block md-col-4 md-pl4"> 
   {% include right-rail.html %}
@@ -98,4 +111,6 @@ layout: bpage
 <div class="xs-block md-hide">
   {% include sharebar--sticky.html %}
 </div>
+
+
 
