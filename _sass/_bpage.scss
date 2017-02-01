@@ -19,7 +19,7 @@
 .subbuzz-header {
 
   @include solid-breakpoint("md") {
-    font-size: 1.625rem;
+    font-size: 1.625rem; 
   }
 }
 
@@ -282,4 +282,40 @@
   }
 
 
+  ////reactions
+
+.extra-bold {
+  font-weight: 800;
+}
+
+.reactions__wrapper {
+  justify-content: space-between;
+  max-width: 690px;
+  overflow-x: scroll;
+}
+
+.reaction__badge {
+  margin: 0 $space-05; 
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    background-color: $fill-yellow;
+
+    &:hover {
+      background-color: desaturate($fill-yellow, 5%);
+    }
+  }
+}
+
+
+.reaction__chart {
+  background-color: darken($fill-yellow-lighter, 8%);
+}
 
