@@ -12,18 +12,14 @@
   }
 
   @include solid-breakpoint("md") {
-    font-size: 2.25rem;
+    font-size: 2.265rem;
   }
 }
 
-.buzz-title-large {
-
-  @include solid-breakpoint("xs") {
-    font-size: $text-1;
-  }
+.subbuzz-header {
 
   @include solid-breakpoint("md") {
-    font-size: 2.625rem;
+    font-size: 1.625rem;
   }
 }
 
