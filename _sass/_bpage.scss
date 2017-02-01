@@ -294,6 +294,10 @@
   overflow-x: scroll;
 }
 
+.reactions__wrapper::-webkit-scrollbar {
+  display:none;
+}
+
 .reaction__badge {
   margin: 0 $space-05; 
 
