@@ -333,6 +333,9 @@
 
 
 .image-outset {
-  margin-left: -4rem;
+
+  @include solid-breakpoint("md") {
+    margin-left: -4rem;
+  }
 }
 
