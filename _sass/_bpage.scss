@@ -281,13 +281,6 @@
     }
   }
 
-.serif-font {
-
-  p { 
-
-    font: 18px/30px Georgia,Cambria,serif
-  }
-}
 
 
   ////reactions
@@ -332,10 +325,16 @@
 }
 
 
-.image-outset {
+.subbuzz-title {
+
+  @include solid-breakpoint("xs") {
+    font-size: $text-3;
+  }
 
   @include solid-breakpoint("md") {
-    margin-left: -4rem;
+    font-size: 1.625rem;
   }
+
 }
+
 
