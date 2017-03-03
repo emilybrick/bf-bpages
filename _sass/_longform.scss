@@ -32,3 +32,22 @@
 .caption-feature {
    font-family: "Proxima Nova" !important;
 }
+
+.blockquote {
+  border-left: 8px solid $fill-gray;
+  font-family: "Proxima Nova" !important;
+}
+
+
+.pullquote {
+
+  @include solid-breakpoint("xs") {
+    font-size: $text-2;
+    line-height: 1.3;
+  }
+
+  @include solid-breakpoint("md") {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+}
