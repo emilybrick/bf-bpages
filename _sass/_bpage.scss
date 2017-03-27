@@ -22,7 +22,7 @@ body {
 .subbuzz-header {
 
   @include solid-breakpoint("md") {
-    font-size: 1.625rem; 
+    font-size: 1.625rem;
   }
 }
 
@@ -50,33 +50,33 @@ body {
 }
 
 .share-more {
-  
+
   .share-more__icon {
     fill: white;
     width: 1.25rem;
     height: 1.25rem;
     top: 2px;
   }
-  
+
   .share-more__button {
     background-color: $fill-blue;
     border: none;
     border-radius: $border-radius;
     height: 2.625rem;
   }
-  
+
 }
 
 
 .more {
-  
+
   .more__button {
     background-color: $fill-blue;
     border: none;
     border-radius: $border-radius;
     height: 2.625rem;
   }
-  
+
 }
 
 .sharebar-subbuzz--facebook {
@@ -150,7 +150,7 @@ body {
 }
 
 
-//// Filestack 
+//// Filestack
 
 #filestack-container {
   width: 660px;
@@ -229,16 +229,16 @@ body {
 
 @include generate-breakpoint-prefixes {
   &flex-justify-start {
-    -webkit-justify-content: start;
-    justify-content: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
 
 
 @include generate-breakpoint-prefixes {
   &flex-justify-end {
-    -webkit-justify-content: end;
-    justify-content: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
 
@@ -267,7 +267,7 @@ body {
 
 .article-17, .list-17 {
   p {
-    
+
     @include solid-breakpoint("md") {
       font-size: 17px;
     }
@@ -277,7 +277,7 @@ body {
 
 .article-18, .list-18 {
     p {
-      
+
       @include solid-breakpoint("md") {
         font-size: 18px;
       }
@@ -303,7 +303,7 @@ body {
 }
 
 .reaction__badge {
-  margin: 0 $space-05; 
+  margin: 0 $space-05;
 
   &:first-child {
     margin-left: 0;
@@ -340,4 +340,28 @@ body {
 
 }
 
+.update-subbuzz-share {
 
+  @include solid-breakpoint("md") {
+    margin-left: auto;
+  }
+}
+
+.update-timestamp {
+
+  @include solid-breakpoint("md") {
+    margin-left: -1.325rem;
+  }
+}
+
+
+.update-share-buttons  {
+  width: 1.85rem;
+  border-radius: 50%;
+  height: 1.85rem;
+
+  svg {
+    margin-top: 3px;
+    margin-left: 8px;
+  }
+}
