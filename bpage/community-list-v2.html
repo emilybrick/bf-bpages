@@ -10,19 +10,26 @@ layout: bpage
   <!-- header -->
   <div class="header xs-mb3">
     <h1 class="bold buzz-title xs-mb1">31 Little Things You’ve Probably Forgotten You Need To Clean</h1>
-    <h3 class="xs-text-4 md-text-3 xs-mb1">*Pins* *Grabs the cleaning wipes*</h3>
+    <h3 class="xs-text-4 md-text-3 xs-mb2 regular">* Grabs the cleaning wipes *</h3>
 
     <p class="text-gray-lightest xs-text-6 xs-mb2">posted on Nov. 7, 2016, at 11:16 a.m.</p>
 
-    <div class="xs-mb1 xs-text-5 clearfix flex xs-flex-align-center">
-      <a href="#">
-        <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-05/1/16/user_images/webdr08/nataliebrown-v2-10869-1430512902-0_large.jpg" class="avatar xs-mr1 circle">
-      </a>
-      <div>
-        <a href="/agh" class="bold">Natalie Brown</a>
-        <span class="xs-block text-gray-lightest">BuzzFeed Staff</span>
+    <div class="xs-mb1 clearfix flex xs-flex-column md-flex-row xs-flex-justify-center xs-p2 fill-gray-lighter rounded">
+
+      <div class="flex md-flex-align-center xs-flex-grow-1">
+        <a href="#" style="line-height:0;">
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-05/1/16/user_images/webdr08/nataliebrown-v2-10869-1430512902-0_large.jpg" class="avatar xs-mr1 circle">
+        </a>
+        <div class="xs-mb3 md-mb0">
+          <a href="/agh" class="bold xs-text-4 xs-mb1">Natalie Brown</a>
+          <span class="xs-block text-gray-lightest xs-text-5">Community Contributor</span>
+        </div>
       </div>
+
+      <p class="xs-text-5 xs-col-12 md-col-7 md-pl2">This post has not been vetted or endorsed by BuzzFeed's editorial staff. BuzzFeed Community is a place where anyone create a post. <a href="#">Learn more or make a post!</a></p>
+
     </div>
+
   </div>
 
   <!-- top share bar -->
@@ -136,36 +143,28 @@ layout: bpage
       <p class="xs-mb2">Learn more uses for hydrogen peroxide here.</p>
     </div>
 
+    <div class="fill-gray-lighter rounded xs-p2">
+      <p class="xs-text-4">This post was created by a member of BuzzFeed Community, where anyone can post awesome lists and creations.
+        <a href="#">Learn more or post your buzz!</a></p>
+    </div>
+
   </div>
 
   <!-- bottom share bar -->
-  <div class="xs-hide md-block">
-    {% include sharebar.html %}
-  </div>
+  <div class="xs-hide md-block xs-mb5">{% include sharebar.html %}</div>
+
+  <div class="xs-p3 fill-yellow-lighter flex xs-flex-align-center xs-flex-justify-center text-gray-lighter"> This area is for comments!</div>
+
 </div>
 
 <!-- Right Rail -->
-<div class="col xs-hide md-inline-block md-col-4 md-pl4 xs-text-center text-gray-lighter">
+<div class="col xs-hide md-inline-block md-col-4 md-pl4">
+  {% include right-rail-community.html %}
+</div>
 
-  <div class="xs-p4 xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    Ad Module
-  </div>
-
-  <div class="xs-p4 xs-py6  xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    News Module
-  </div>
-
-  <div class="xs-p4 xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    Social Module
-  </div>
-
-  <div class="xs-p4 xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    Newsletter Module
-  </div>
-
-  <div class="xs-p4 xs-py6 xs-mb2 fill-gray-lighter xs-border-lighter rounded">
-    Top Posts
-  </div>
+<!-- Feed Underneath the Mobile Article -->
+<div class="xs-block md-hide">
+  {% include full-width-feed.html %}
 </div>
 
 <!-- Bottom Sticky Sharebar -->
