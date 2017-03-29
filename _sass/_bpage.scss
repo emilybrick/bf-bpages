@@ -277,6 +277,10 @@ body {
 
 }
 
+
+
+/// Breaking News Styles
+
 .update-subbuzz-share {
 
   @include solid-breakpoint("md") {
@@ -297,12 +301,26 @@ body {
 
 
 .update-share-buttons  {
-  width: 1.85rem;
-  border-radius: 50%;
-  height: 1.85rem;
 
-  svg {
-    margin-top: 3px;
-    margin-left: 8px;
+  @include solid-breakpoint("xs") {
+    width: 2.125rem;
+    border-radius: 50%;
+    height: 2.125rem;
+
+    svg {
+      margin-top: 7px;
+      margin-left: 10px;
+    }
+  }
+
+  @include solid-breakpoint("md") {
+    width: 1.85rem;
+    border-radius: 50%;
+    height: 1.85rem;
+
+    svg {
+      margin-top: 3px;
+      margin-left: 8px;
+    }
   }
 }
