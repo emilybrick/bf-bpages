@@ -2,6 +2,13 @@ body {
   font-family: "Proxima Nova", "proxima-nova", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600 !important;
+}
+
+.bold {
+  font-weight: 600 !important;
+}
 
 .wrapper {
   max-width: 67rem;
@@ -325,4 +332,13 @@ body {
       margin-left: 8px;
     }
   }
+}
+
+
+/// Stick the Ads
+
+#sticky.stick {
+  position: fixed;
+  top: 1rem;
+  width: 315px !important;
 }
