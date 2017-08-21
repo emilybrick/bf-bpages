@@ -340,5 +340,12 @@ h1, h2, h3, h4, h5, h6 {
 #sticky.stick {
   position: fixed;
   top: 1rem;
-  width: 315px !important;
+
+  @include solid-breakpoint("sm") {
+    width: 250px !important;
+  }
+
+  @include solid-breakpoint("lg") {
+    width: 315px !important;
+  }
 }
